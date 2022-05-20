@@ -1,0 +1,64 @@
+baseURL = "https://localhost:1313/OnMicrosoftLabs/"
+## Change to public URL before publishing
+languageCode = "en-US"
+defaultContentLanguage = "en"
+
+title = "XXX on Microsoft Labs - Tutorials and Guides"
+theme = "hugo-theme-relearn"
+themesdir = "themes"
+#metaDataFormat = "yaml"
+canonifyURLs = true
+
+publishDir = "docs"
+defaultContentLanguageInSubdir= true
+
+
+[params]
+#  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  description = "XXX on Microsoft Labs - Tutorials and Guides"
+  author = "CHANGE ME"
+  showVisitedLinks = true
+  alwaysopen = false
+  collapsibleMenu = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  disableLandingPageButton = false
+  disableMermaid = false
+  customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
+  titleSeparator = "::"
+  themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[Languages]
+[Languages.en]
+title = "XXX on Microsoft Labs - Tutorials and Guides"
+weight = 1
+languageName = "English"
+landingPageURL = "/"
+landingPageName = "<i class='fas fa-home'></i> Home"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+## Change github URL 
+url = "https://github.com/YOURCONTENTURL"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-youtube' ></i> Youtube Playlist"
+## Change YOutube URL
+url = "https://www.youtube.com/CHANGGME"
+weight = 11
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+
+
+
+
